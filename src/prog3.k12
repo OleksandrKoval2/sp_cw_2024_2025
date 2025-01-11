@@ -1,0 +1,45 @@
+//Prog3//
+#Program prog3;
+Variable Integer_2 aaaaaa,aaaaa2,bbbbbb,xxxxxx,ccccc1,ccccc2;
+Start
+Read aaaaaa;
+Read bbbbbb;
+For aaaaa2<-aaaaaa To bbbbbb Do
+	Write aaaaa2 ** aaaaa2;
+
+For aaaaa2<-bbbbbb To aaaaaa Do
+	Write aaaaa2 ** aaaaa2;
+
+xxxxxx<-0;
+ccccc1<-0;
+While ccccc1 < aaaaaa 
+Start
+	ccccc2<-0;
+	While ccccc2 < bbbbbb
+	Start	
+		xxxxxx<-xxxxxx ++ 1;
+		ccccc2<-ccccc2 ++ 1;
+	Stop
+	End While
+ccccc1<-ccccc1 ++ 1;
+Stop	
+End While
+Write xxxxxx;
+
+xxxxxx<-0;
+ccccc1<-1;
+Repeat
+Start
+  ccccc2<-1;
+  Repeat
+  Start
+    xxxxxx<-xxxxxx++1;
+    ccccc2<-ccccc2++1;
+	Stop
+  Until !(ccccc2 > bbbbbb)
+  ccccc1<-ccccc1++1;
+ Stop
+Until !(ccccc1 > aaaaaa)
+Write xxxxxx;
+
+Stop

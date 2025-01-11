@@ -1,0 +1,57 @@
+//Prog2//
+#Program prog2;
+Variable Integer_2 aaaaaa,bbbbbb,cccccc;
+Start
+Read aaaaaa;
+Read bbbbbb;
+Read cccccc;
+If(aaaaaa > bbbbbb)
+Start
+	If(aaaaaa > cccccc)
+	Start
+		Goto Abigger;		
+	Stop
+	Else
+	Start
+		Write cccccc;
+		Goto Outofif;
+		Abigger:		
+		Write aaaaaa;
+		Goto Outofif;
+	Stop
+Stop	
+If(bbbbbb < cccccc)
+Start
+	Write cccccc;
+Stop	
+Else
+Start
+	Write bbbbbb;
+Stop
+Outofif:	
+
+If((aaaaaa == bbbbbb) & (aaaaaa == cccccc) & (bbbbbb == cccccc))
+Start
+	Write 1;
+Stop	
+Else
+Start
+	Write 0;
+Stop
+If((aaaaaa < 0) | (bbbbbb < 0) | (cccccc < 0))
+Start
+	Write -1;
+Stop	
+Else
+Start
+	Write 0;
+Stop
+If(!(aaaaaa < (bbbbbb ++ cccccc)))
+Start
+	Write(10);
+Stop	
+Else
+Start
+	Write(0);
+Stop
+Stop

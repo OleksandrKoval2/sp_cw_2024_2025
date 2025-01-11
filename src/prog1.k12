@@ -1,0 +1,17 @@
+//Prog1//
+#Program prog1;
+Variable Integ er_2 aaaaaa,bbbbbb,xxxxxx,yyyyyy;
+Start
+Read aaaaaa;
+Read bbbbbb
+Write aaaaaa ++ bbbbbb;
+Write aaaaaa -- bbbbbb;
+Write aaaaaa ** bbbbbb;
+Write aaaaaa Div bbbbbb;
+Write aaaaaa Mod bbbbbb;
+
+xxxxxx<-(aaaaaa -- bbbbbb) ** 10 ++ (aaaaaa ++ bbbbbb) Div 10;
+yyyyyy<-xxxxxx ++ (xxxxxx Mod 10);
+Write xxxxxx;
+Write yyyyyy;
+Stop
